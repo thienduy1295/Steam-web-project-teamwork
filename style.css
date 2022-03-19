@@ -89,7 +89,7 @@ body {
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.5s ease;
-  transforms-origin: top left;
+  /* transforms-origin: top left; */
 }
 .menu li:hover{
   background: rgba(255, 255, 255, 0.5);
