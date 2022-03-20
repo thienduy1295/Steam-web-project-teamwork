@@ -16,7 +16,7 @@ body {
   background: linear-gradient(
     90deg,
     #2a475e 0%,
-    #2a475e 30%,
+    #1e3344 30%,
     #1b2838 67%,
     rgba(2, 0, 36, 1) 100%
   );
@@ -81,6 +81,10 @@ header .navigation li a {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+header .navigation li a:hover {
+  color: rgb(255, 255, 255);
 }
 
 .login {
@@ -230,7 +234,7 @@ main {
 .card-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {
@@ -240,6 +244,11 @@ main {
   border-radius: 0.35rem;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.521);
   max-width: 300px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform: translateY(-3px);
 }
 
 .card-header {
@@ -264,6 +273,7 @@ main {
 .card:hover > .card-header.card-image > img {
   transform: scale(1.035);
 }
+
 
 .card-footer {
   margin-top: 1rem;
@@ -336,3 +346,62 @@ main {
   }
 }
 
+/* login page */
+.login-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  background-color:#1c252c;
+  color: rgb(204, 204, 204);
+  border-radius: 10px;
+  padding:50px;
+  margin-top: 50px;
+}
+
+.container-login{
+  padding:16px;
+}
+
+.btn-login {
+  background-color: #137418;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.login-form .card-login h1{
+  text-align: center;
+  padding: 20px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.login-form input[type=text], input[type=password] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 400px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+
+.imgg{
+  width: 19px;
+  margin-top: 10px;
+}
