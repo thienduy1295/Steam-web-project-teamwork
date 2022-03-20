@@ -230,6 +230,8 @@ main {
   color: rgb(197, 197, 197);
   font-weight: bold;
   padding-bottom: 50px;
+  text-align: center;
+  padding-top: 45px;
 }
 
 .card-grid {
