@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: #1d3141;
+    min-height: 100vh;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 15px 100px;
+  z-index: 10;
+  background-color: #171a21;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+header .logo {
+  position: relative;
+  width: 150px;
+}
+
+header .navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+header .navigation li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+header .navigation li a {
+  color: rgb(184, 184, 184);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+header .navigation li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.login {
+  flex-direction: row;
+  display: flex;
+}
+
+.login li a {
+  color: rgb(184, 184, 184);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-right: 15px;
+}
+
+.login li {
+  list-style: none;
+}
+
+.login-box {
+  background-color: #5c7e10;
+  border-radius: 3px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.login-box:hover {
+  background-color: #839e4ada;
+}
+
+@media (max-width: 400px) {
+  header {
+    padding: 10px 20px;
+    padding-bottom: 25px;
+    flex-direction: column;
+  }
+  .navigation {
+    padding: 10px 20px;
+  }
+
+  header .logo {
+    margin-right: 15px;
+  }
+}
+
+.about-pic{
+  position: absolute;
+  top: 71%;
+  left: 64%;
+  transform: translate(-40%, -37%);
+  color: whitesmoke;
+  font-size: 100px;
+}
+
+.about-bg{
+  max-width: 100%;
+  height: 100%; 
+}
+
+.e{
+    z-index: -1;
+}
+@media (max-width: 400px) {
+    .e{
+        z-index: 100;
+        position: absolute;
+        left: 130px;
+        top:575px;
+    }
+    .about-pic{
+        font-size: 50px;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="img/steamlogo.png" alt="" /></a>
+  
+        <ul class="navigation">
+          <li><a href="index.html">Store</a></li>
+          <li><a href="">Community</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+  
+        <div class="login">
+          <li><a class="login-box" href="login.html">Login</a></li>
+          <li><a href="">|</a></li>
+          <li><a href="reg.html">Register</a></li>
+        </div>
+      </header>
+      
+      <main>
+          <h1 class="about-pic e"><strike>S</strike>Team</h1>
+        <h1 class="about-pic">3</h1>
+        <img class="about-bg" src="img/steambg.png" alt="">
+      </main>
+</body>
+</html>
