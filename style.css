@@ -144,7 +144,7 @@ header .navigation li a:hover {
   margin-right: 1.5rem;
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
   #sidebar {
     display: none;
   }
@@ -154,11 +154,11 @@ header .navigation li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding:25px;
+  padding: 25px;
 }
 
-.search{
-  padding:5px;
+.search {
+  padding: 5px;
 }
 
 .search-area p {
@@ -206,8 +206,8 @@ header .navigation li a:hover {
   /* transforms-origin: top left; */
 }
 
-.menu ul li{
-  text-align:center;
+.menu ul li {
+  text-align: center;
 }
 
 .menu li:hover {
@@ -230,7 +230,6 @@ main {
   color: rgb(197, 197, 197);
   font-weight: bold;
   padding-bottom: 50px;
-
 }
 
 .card-grid {
@@ -246,10 +245,10 @@ main {
   border-radius: 0.35rem;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.521);
   max-width: 300px;
-  transition:0.3s;
+  transition: 0.3s;
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(-3px);
 }
 
@@ -276,7 +275,6 @@ main {
   transform: scale(1.035);
 }
 
-
 .card-footer {
   margin-top: 1rem;
 }
@@ -301,7 +299,7 @@ main {
   color: rgb(236, 236, 236);
 }
 
-.btn:active{
+.btn:active {
   transform: translateY(1px);
   background: #425716;
   color: rgb(255, 255, 255);
@@ -321,16 +319,16 @@ main {
   margin-left: 0.5rem;
 }
 
-.howard{
-  position:fixed;
+.howard {
+  position: fixed;
   left: 0;
-  bottom:0;
+  bottom: 0;
   width: 130px;
 }
 
-@media (max-width: 400px){
-  .card{
-    width:270px;
+@media (max-width: 400px) {
+  .card {
+    width: 270px;
   }
   .card-grid {
     display: grid;
@@ -338,12 +336,12 @@ main {
     margin-left: 40px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
-  .best{
+  .best {
     margin-top: 22px;
     margin-left: 40px;
   }
-  .howard{
-    position:fixed;
+  .howard {
+    position: fixed;
     left: 280px;
   }
 }
@@ -355,15 +353,15 @@ main {
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
-  background-color:#1c252c;
+  background-color: #1c252c;
   color: rgb(204, 204, 204);
   border-radius: 10px;
-  padding:50px;
+  padding: 50px;
   margin-top: 50px;
 }
 
-.container-login{
-  padding:16px;
+.container-login {
+  padding: 16px;
 }
 
 .btn-login {
@@ -377,7 +375,7 @@ main {
   border-radius: 5px;
 }
 
-.login-form .card-login h1{
+.login-form .card-login h1 {
   text-align: center;
   padding: 20px;
 }
@@ -387,7 +385,8 @@ span.psw {
   padding-top: 16px;
 }
 
-.login-form input[type=text], input[type=password] {
+.login-form input[type="text"],
+input[type="password"] {
   width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
@@ -398,17 +397,15 @@ span.psw {
 
 @media screen and (max-width: 400px) {
   span.psw {
-     display: block;
-     float: none;
+    display: block;
+    float: none;
   }
 }
 
-.imgg{
+.imgg {
   width: 19px;
   margin-top: 10px;
 }
-
-
 
 /* ---------Game Detail----------------------------------- */
 
@@ -457,4 +454,8 @@ span.psw {
   background: rgba(223, 223, 233, 0.253);
   padding: 2px 5px;
   cursor: pointer;
+}
+
+.uList {
+  text-transform: capitalize;
 }
