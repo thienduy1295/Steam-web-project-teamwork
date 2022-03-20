@@ -16,8 +16,12 @@
 }
 
 body{
-    background-color: #1d3141;
-    min-height: 100vh;
+    background-image: url(img/steambg.png);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 100%;
 }
 
 html {
@@ -113,9 +117,9 @@ header .navigation li a:hover {
 
 .about-pic{
   position: absolute;
-  top: 71%;
+  top: 65%;
   left: 64%;
-  transform: translate(-40%, -37%);
+  transform: translate(-35%, -37%);
   color: whitesmoke;
   font-size: 100px;
 }
@@ -128,7 +132,7 @@ header .navigation li a:hover {
 .e{
     z-index: -1;
 }
-@media (max-width: 400px) {
+@media (max-width: 376px) {
     .e{
         z-index: 100;
         position: absolute;
@@ -139,6 +143,18 @@ header .navigation li a:hover {
         font-size: 50px;
     }
 }
+@media (max-width: 960px) {
+    .about-pic{
+      position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    color: whitesmoke;
+    font-size: 100px;
+    }
+}
+
+
 
 </style>
 <body>
@@ -159,9 +175,8 @@ header .navigation li a:hover {
       </header>
       
       <main>
-          <h1 class="about-pic e"><strike>S</strike>Team</h1>
+          <!-- <!-- <h1 class="about-pic e"><strike>S</strike>Team</h1> -->
         <h1 class="about-pic">3</h1>
-        <img class="about-bg" src="img/steambg.png" alt="">
       </main>
 </body>
 </html>
