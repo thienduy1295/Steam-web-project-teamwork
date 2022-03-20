@@ -13,7 +13,7 @@ html {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -155,22 +155,21 @@ header .navigation li a:hover {
   margin-top: -85px;
 }
 
-
 .search-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding:25px;
+  padding: 25px;
 }
 
-.search{
-  padding:5px;
+.search {
+  padding: 5px;
 }
 
 .search-area p {
   text-align: center;
   font-size: 1.3rem;
-  padding:10px;
+  padding: 10px;
 }
 .form-search {
   display: flex;
@@ -210,8 +209,8 @@ header .navigation li a:hover {
   transition: all 0.5s ease;
 }
 
-.menu ul li{
-  text-align:center;
+.menu ul li {
+  text-align: center;
 }
 
 .menu li:hover {
@@ -219,7 +218,7 @@ header .navigation li a:hover {
   transition: all 0.5s ease;
 }
 
-@media (max-width: 415px){
+@media (max-width: 415px) {
   #sidebar {
     display: none;
   }
@@ -241,7 +240,6 @@ main {
   font-weight: bold;
   padding-bottom: 50px;
   text-align: center;
-
 }
 
 .card-grid {
@@ -256,14 +254,14 @@ main {
   border-radius: 0.35rem;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.521);
   max-width: 300px;
-  transition:0.3s;
+  transition: 0.3s;
 }
 
-.genre{
-  margin-left: 95px;
+.genre {
+  text-align: center;
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(-3px);
 }
 
@@ -291,7 +289,6 @@ main {
   transform: scale(1.035);
 }
 
-
 .card-footer {
   margin-top: 1rem;
 }
@@ -309,7 +306,6 @@ main {
   cursor: pointer;
   border-radius: 3px;
   transition: 0.1s;
-
 }
 
 .btn:hover,
@@ -318,7 +314,7 @@ main {
   color: rgb(236, 236, 236);
 }
 
-.btn:active{
+.btn:active {
   transform: translateY(1px);
   background: #425716;
   color: rgb(255, 255, 255);
@@ -338,16 +334,16 @@ main {
   margin-left: 0.5rem;
 }
 
-.howard{
-  position:sticky;
+.howard {
+  position: sticky;
   left: 0;
-  bottom:0;
+  bottom: 0;
   width: 130px;
 }
 
-@media (max-width: 376px){
-  .card{
-    width:270px;
+@media (max-width: 376px) {
+  .card {
+    width: 270px;
   }
   .card-grid {
     display: grid;
@@ -355,20 +351,20 @@ main {
     margin-left: 40px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
-  .best{
+  .best {
     color: #fff;
     margin-top: 22px;
     margin-left: 40px;
   }
-  .howard{
-    position:fixed;
+  .howard {
+    position: fixed;
     left: 280px;
   }
 }
 
-@media (max-width: 415px){
-  .card{
-    width:270px;
+@media (max-width: 415px) {
+  .card {
+    width: 270px;
   }
   .card-grid {
     display: grid;
@@ -376,13 +372,13 @@ main {
     margin-left: 40px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
-  .best{
+  .best {
     color: #fff;
     margin-top: 22px;
     margin-left: 40px;
   }
-  .howard{
-    position:fixed;
+  .howard {
+    position: fixed;
     left: 280px;
   }
 }
@@ -393,15 +389,15 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color:#1c252c;
+  background-color: #1c252c;
   color: rgb(204, 204, 204);
   border-radius: 10px;
-  padding:50px;
+  padding: 50px;
   margin-top: 50px;
 }
 
-.container-login{
-  padding:16px;
+.container-login {
+  padding: 16px;
 }
 
 .btn-login {
@@ -415,7 +411,7 @@ main {
   border-radius: 5px;
 }
 
-.login-form .card-login h1{
+.login-form .card-login h1 {
   text-align: center;
   padding: 20px;
 }
@@ -425,7 +421,8 @@ span.psw {
   padding-top: 16px;
 }
 
-.login-form input[type=text], input[type=password] {
+.login-form input[type="text"],
+input[type="password"] {
   width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
@@ -436,20 +433,20 @@ span.psw {
 
 @media screen and (max-width: 400px) {
   span.psw {
-     display: block;
-     float: none;
+    display: block;
+    float: none;
   }
 }
 
-.imgg{
+.imgg {
   width: 19px;
   margin-top: 10px;
   cursor: pointer;
 }
 
 @media screen and (max-width: 400px) {
-  .header-image img{
-    max-width:290px;
+  .header-image img {
+    max-width: 290px;
   }
 }
 
@@ -465,7 +462,7 @@ span.psw {
   height: 70vh;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .display-detail {
     height: 100%;
     margin-right: 40px;
@@ -497,17 +494,18 @@ span.psw {
   flex: 1 65%;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .header-image img {
-    width: 200px;  }
+    width: 200px;
+  }
 }
-@media screen and (max-width: 480px){
-    #container-detail {
-      display: block;
-      float: none;
-    }
+@media screen and (max-width: 480px) {
+  #container-detail {
+    display: block;
+    float: none;
+  }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .box-description {
     display: block;
     float: none;
