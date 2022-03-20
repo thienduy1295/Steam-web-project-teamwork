@@ -230,7 +230,6 @@ main {
 .card-grid {
   display: grid;
   gap: 1rem;
-  align-items: flex-start;
   grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
 }
 
