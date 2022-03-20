@@ -9,7 +9,9 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img class="logo" src="img/steamlogo.png" alt="" /></a>
+      <a href="index.html"
+        ><img class="logo" src="img/steamlogo.png" alt=""
+      /></a>
 
       <ul class="navigation">
         <li><a href="">Store</a></li>
@@ -29,139 +31,20 @@
         <div class="search-area">
           <p>Search for game</p>
           <div class="form-search">
-            <input type="text" placeholder="Search" />
-            <button class="search">🔍</button>
+            <input type="text" placeholder="Search" id="search" />
+            <button class="search" id="btn-search">🔍</button>
           </div>
         </div>
         <div class="menu">
-          <ul>
-            <li>Action</li>
-            <li>Adventure</li>
-            <li>Casual</li>
-            <li>Free to play</li>
-            <li>RPG</li>
-            <li>Strategy</li>
-            <li>Indie</li>
-            <li>Animation & Modeling</li>
-            <li>Video production</li>
-            <li>Simulation</li>
-          </ul>
+          <ul class="uList"></ul>
         </div>
       </div>
-      <div class="display-game">
+      <div class="display-game" id="display">
         <h2 class="best">Best Game of The Week</h2>
 
-        <div class="card-grid">
-          <div class="card">
-            <div class="card-header card-image">
-              <img src="img/testincard.jpg" alt="" />
-            </div>
-            <div class="card-header">Deadcells</div>
-            <div class="card-body">$6.99</div>
-            <div class="card-footer">
-              <button class="btn">Buy this game</button>
-              <button class="btn btn-outline">Add to WishList</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header card-image">
-              <img src="img/testincard.jpg" alt="" />
-            </div>
-            <div class="card-header">Deadcells</div>
-            <div class="card-body">$6.99</div>
-            <div class="card-footer">
-              <button class="btn">Buy this game</button>
-              <button class="btn btn-outline">Add to WishList</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header card-image">
-              <img src="img/testincard.jpg" alt="" />
-            </div>
-            <div class="card-header">Deadcells</div>
-            <div class="card-body">$6.99</div>
-            <div class="card-footer">
-              <button class="btn">Buy this game</button>
-              <button class="btn btn-outline">Add to WishList</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header card-image">
-              <img src="img/testincard.jpg" alt="" />
-            </div>
-            <div class="card-header">Deadcells</div>
-            <div class="card-body">$6.99</div>
-            <div class="card-footer">
-              <button class="btn">Buy this game</button>
-              <button class="btn btn-outline">Add to WishList</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header card-image">
-              <img src="img/testincard.jpg" alt="" />
-            </div>
-            <div class="card-header">Deadcells</div>
-            <div class="card-body">$6.99</div>
-            <div class="card-footer">
-              <button class="btn">Buy this game</button>
-              <button class="btn btn-outline">Add to WishList</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header card-image">
-              <img src="img/testincard.jpg" alt="" />
-            </div>
-            <div class="card-header">Deadcells</div>
-            <div class="card-body">lorem</div>
-            <div class="card-footer">
-              <button class="btn">Buy this game</button>
-              <button class="btn btn-outline">Add to WishList</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header card-image">
-              <img src="img/testincard.jpg" alt="" />
-            </div>
-            <div class="card-header">Deadcells</div>
-            <div class="card-body">$6.99</div>
-            <div class="card-footer">
-              <button class="btn">Buy this game</button>
-              <button class="btn btn-outline">Add to WishList</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header card-image">
-              <img src="img/testincard.jpg" alt="" />
-            </div>
-            <div class="card-header">Deadcells</div>
-            <div class="card-body">$6.99</div>
-            <div class="card-footer">
-              <button class="btn">Buy this game</button>
-              <button class="btn btn-outline">Add to WishList</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header card-image">
-              <img src="img/testincard.jpg" alt="" />
-            </div>
-            <div class="card-header">Deadcells</div>
-            <div class="card-body">$6.99</div>
-            <div class="card-footer">
-              <button class="btn">Buy this game</button>
-              <button class="btn btn-outline">Add to WishList</button>
-            </div>
-          </div>
-        </div>
+        <div class="card-grid"></div>
       </div>
     </main>
-    <img class="howard" src="img/howard.gif" alt="">
+    <script src="script.js"></script>
   </body>
 </html>
