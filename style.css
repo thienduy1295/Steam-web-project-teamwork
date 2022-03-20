@@ -4,14 +4,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
   font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 
 body {
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -130,7 +140,7 @@ header .navigation li a:hover {
   }
 }
 
-/* ------------style sidebar ----------------------*/
+/* ------------style sidebar */
 
 #sidebar {
   flex: 1 20%;
@@ -142,33 +152,29 @@ header .navigation li a:hover {
   color: #f7f1e3;
   padding-left: 1rem;
   margin-right: 1.5rem;
+  margin-top: -85px;
 }
 
-@media (max-width: 400px) {
-  #sidebar {
-    display: none;
-  }
-}
 
 .search-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 25px;
+  padding:25px;
 }
 
-.search {
-  padding: 5px;
+.search{
+  padding:5px;
 }
 
 .search-area p {
-  font-family: Ubuntu, sans-serif;
   text-align: center;
   font-size: 1.3rem;
+  padding:10px;
 }
 .form-search {
   display: flex;
-  margin: 10px 5px 0;
+  margin: 0 5px;
   height: 30px;
   border-radius: 5px;
 }
@@ -188,7 +194,6 @@ header .navigation li a:hover {
 }
 
 .menu {
-  font-family: Ubuntu, sans-serif;
   border-top: 3px double #f7f1e3;
   padding-top: 1rem;
 }
@@ -203,16 +208,21 @@ header .navigation li a:hover {
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.5s ease;
-  /* transforms-origin: top left; */
 }
 
-.menu ul li {
-  text-align: center;
+.menu ul li{
+  text-align:center;
 }
 
 .menu li:hover {
   background: rgba(255, 255, 255, 0.5);
   transition: all 0.5s ease;
+}
+
+@media (max-width: 415px){
+  #sidebar {
+    display: none;
+  }
 }
 /* --------------end style sidebar */
 
@@ -231,31 +241,35 @@ main {
   font-weight: bold;
   padding-bottom: 50px;
   text-align: center;
-  padding-top: 45px;
+
 }
 
 .card-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
 }
 
 .card {
   background: #062138;
   padding: 1rem;
-  /* border:1px solid #777; */
   border-radius: 0.35rem;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.521);
   max-width: 300px;
-  transition: 0.3s;
+  transition:0.3s;
 }
 
-.card:hover {
+.genre{
+  margin-left: 95px;
+}
+
+.card:hover{
   transform: translateY(-3px);
 }
 
 .card-header {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
   margin-bottom: 0.5rem;
 }
 
@@ -277,12 +291,14 @@ main {
   transform: scale(1.035);
 }
 
+
 .card-footer {
   margin-top: 1rem;
 }
 
 .card-body {
   font-size: 0.9rem;
+  color: rgb(5, 209, 5);
 }
 
 .btn {
@@ -293,6 +309,7 @@ main {
   cursor: pointer;
   border-radius: 3px;
   transition: 0.1s;
+
 }
 
 .btn:hover,
@@ -301,7 +318,7 @@ main {
   color: rgb(236, 236, 236);
 }
 
-.btn:active {
+.btn:active{
   transform: translateY(1px);
   background: #425716;
   color: rgb(255, 255, 255);
@@ -321,16 +338,16 @@ main {
   margin-left: 0.5rem;
 }
 
-.howard {
-  position: fixed;
+.howard{
+  position:sticky;
   left: 0;
-  bottom: 0;
+  bottom:0;
   width: 130px;
 }
 
-@media (max-width: 400px) {
-  .card {
-    width: 270px;
+@media (max-width: 376px){
+  .card{
+    width:270px;
   }
   .card-grid {
     display: grid;
@@ -338,12 +355,34 @@ main {
     margin-left: 40px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
-  .best {
+  .best{
+    color: #fff;
     margin-top: 22px;
     margin-left: 40px;
   }
-  .howard {
-    position: fixed;
+  .howard{
+    position:fixed;
+    left: 280px;
+  }
+}
+
+@media (max-width: 415px){
+  .card{
+    width:270px;
+  }
+  .card-grid {
+    display: grid;
+    gap: 1rem;
+    margin-left: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .best{
+    color: #fff;
+    margin-top: 22px;
+    margin-left: 40px;
+  }
+  .howard{
+    position:fixed;
     left: 280px;
   }
 }
@@ -353,17 +392,16 @@ main {
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
-  background-color: #1c252c;
+  background-color:#1c252c;
   color: rgb(204, 204, 204);
   border-radius: 10px;
-  padding: 50px;
+  padding:50px;
   margin-top: 50px;
 }
 
-.container-login {
-  padding: 16px;
+.container-login{
+  padding:16px;
 }
 
 .btn-login {
@@ -377,7 +415,7 @@ main {
   border-radius: 5px;
 }
 
-.login-form .card-login h1 {
+.login-form .card-login h1{
   text-align: center;
   padding: 20px;
 }
@@ -387,8 +425,7 @@ span.psw {
   padding-top: 16px;
 }
 
-.login-form input[type="text"],
-input[type="password"] {
+.login-form input[type=text], input[type=password] {
   width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
@@ -399,17 +436,24 @@ input[type="password"] {
 
 @media screen and (max-width: 400px) {
   span.psw {
-    display: block;
-    float: none;
+     display: block;
+     float: none;
   }
 }
 
-.imgg {
+.imgg{
   width: 19px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
-/* ---------Game Detail----------------------------------- */
+@media screen and (max-width: 400px) {
+  .header-image img{
+    max-width:290px;
+  }
+}
+
+/* game details */
 
 .display-detail {
   flex: 1 80%;
