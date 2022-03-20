@@ -130,7 +130,7 @@ header .navigation li a:hover {
   }
 }
 
-/* ------------style sidebar */
+/* ------------style sidebar ----------------------*/
 
 #sidebar {
   flex: 1 20%;
@@ -162,12 +162,13 @@ header .navigation li a:hover {
 }
 
 .search-area p {
+  font-family: Ubuntu, sans-serif;
   text-align: center;
   font-size: 1.3rem;
 }
 .form-search {
   display: flex;
-  margin: 0 5px;
+  margin: 10px 5px 0;
   height: 30px;
   border-radius: 5px;
 }
@@ -187,6 +188,7 @@ header .navigation li a:hover {
 }
 
 .menu {
+  font-family: Ubuntu, sans-serif;
   border-top: 3px double #f7f1e3;
   padding-top: 1rem;
 }
@@ -404,4 +406,55 @@ span.psw {
 .imgg{
   width: 19px;
   margin-top: 10px;
+}
+
+
+
+/* ---------Game Detail----------------------------------- */
+
+.display-detail {
+  flex: 1 80%;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  background-image: none;
+  margin-left: 10px;
+}
+.display-detail {
+  background-repeat: no-repeat;
+}
+#container-detail {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80vh;
+  height: 350px;
+  display: block;
+}
+.name-detail {
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+.box-description {
+  display: flex;
+}
+.header-image {
+  flex: 1 65%;
+}
+.description-detail {
+  flex: 1 35%;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tag {
+  margin-top: 10px;
+}
+.btn-tag button {
+  color: #67c1f5;
+  border-radius: 2px;
+  border: none;
+  background: rgba(223, 223, 233, 0.253);
+  padding: 2px 5px;
+  cursor: pointer;
 }
